@@ -3,7 +3,7 @@ import React from 'react';
 const Main = () => {
   return (
     <div className="mp-wrapper">
-      {/* 상단 컨테이너 */}
+      {/* 상단 컨테이너  */}
       <div className="mp-top-container">
         <div className="mp-top-content">
           <div className="mp-greeting-text">

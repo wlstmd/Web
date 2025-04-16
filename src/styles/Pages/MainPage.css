@@ -1,0 +1,144 @@
+.mp-wrapper {
+ box-sizing: border-box;
+}
+
+.mp-top-container {
+ height: 280px;
+ background-color: #F0F9FF;
+ padding: 5% 17% 0px 22%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 30px;
+}
+
+.mp-top-content {
+ width: 100%;
+ display: flex;
+ align-items: flex-end;
+ margin-bottom: 25px;
+}
+
+.mp-greeting-text {
+ text-align: left;
+}
+
+.mp-greeting-text {
+ font-size: 19px;
+ margin: 4px 0;
+ line-height: 2.1;
+ font-weight: bold;
+}
+
+.mp-highlight {
+ color: #36AAFC;
+}
+
+.mp-icon-container {
+ width: 112px;
+ height: 112px;
+ margin-left: 40px;
+}
+
+.mp-icon {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.mp-input-container {
+ width: 100%;
+ display: flex;
+ gap: 8px;
+}
+
+.mp-link-input {
+ padding: 10px;
+ font-size: 16px;
+ width: 80%;
+ border: 1px solid #ccc;
+ border-radius: 7px;
+}
+
+.mp-save-button {
+ padding: 10px 20px;
+ background-color: #36AAFC;
+ color: #fff;
+ border: none;
+ border-radius: 7px;
+ cursor: pointer;
+ font-size: 13px;
+ font-weight: bold;
+}
+
+
+/* 링크 저장소 */
+.mp-link-storage-section {
+ padding: 0 22%;
+ margin-bottom: 30px;
+}
+
+.mp-section-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 8px;
+}
+
+.mp-section-title {
+ font-weight: bold;
+ font-size: 18px;
+}
+
+.mp-more {
+ font-size: 12px;
+ color: #757575;
+ cursor: pointer;
+}
+
+.mp-link-category-container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 16px;
+}
+
+.mp-link-category-box {
+ background-color: #fff;
+ border-radius: 8px;
+ padding: 27px;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+ cursor: pointer;
+ flex: 1 1 calc(20% - 16px);
+ min-width: 140px;
+ min-height: 150px;
+ box-sizing: border-box;
+ font-size: 17px;
+ color: #36AAFC;
+}
+
+.mp-category-name {
+ font-weight: bold;
+}
+
+
+/* 최근 열어본 링크 */
+.mp-recent-links-section {
+ padding: 0 22%;
+ margin-bottom: 150px;
+}
+
+.mp-recent-links-boxes {
+ display: flex;
+ flex-direction: column;
+ gap: 16px;
+}
+
+.mp-recent-box {
+ background-color: #F7F7F7;
+ width: 100%;
+ height: 40px;
+ border-radius: 4px;
+}

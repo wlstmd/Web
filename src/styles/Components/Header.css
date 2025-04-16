@@ -1,0 +1,26 @@
+.header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 6% 13px 8%;
+ background-color: #fff;
+}
+
+.header-left .logo {
+ height: 30px;
+ object-fit: contain;
+}
+
+.header-right {
+ display: flex;
+ gap: 50px;
+}
+
+.header-btn {
+ text-decoration: none;
+ color: #333;
+ font-weight: 500;
+ font-size: 14px;
+ padding: 8px 12px;
+ border-radius: 4px;
+}

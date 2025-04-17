@@ -1,17 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
+  const { pathname } = useLocation();
+  const isAuthPage = ['/login', '/signup'].includes(pathname);
+
   return (
-    <header className="header">
+    <header className={`header${isAuthPage ? ' login-bg' : ''}`}>
       <div className="header-left">
-        <Link to="/">
+        <NavLink to="/">
           <img src="/assets/img/Logo.png" alt="로고" className="logo" />
-        </Link>
+        </NavLink>
       </div>
       <div className="header-right">
-        <Link to="/linkSavePage" className="header-btn">링크저장소</Link>
-        <Link to="/login" className="header-btn">로그인</Link>
+        <NavLink 
+          to="/linkSavePage" 
+          className={({ isActive }) => `header-btn ${isActive ? 'active' : ''}`}
+        >
+          링크저장소
+        </NavLink>
+        <NavLink 
+          to="/login" 
+          className={({ isActive }) => `header-btn ${isActive ? 'active' : ''}`}
+        >
+          로그인
+        </NavLink>
       </div>
     </header>
   );

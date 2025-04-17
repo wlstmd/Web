@@ -8,7 +8,6 @@
 
 .header-left .logo {
  height: 30px;
- object-fit: contain;
 }
 
 .header-right {
@@ -24,3 +23,8 @@
  padding: 8px 12px;
  border-radius: 4px;
 }
+
+.header-btn.active {
+ color: #36AAFC;
+}
+

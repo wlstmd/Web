@@ -1,0 +1,71 @@
+.cdp-wrapper {
+ margin-top: 80px;
+ padding: 0 22%;
+}
+
+.cdp-header {
+ font-size: 18px;
+ font-weight: bold;
+ text-align: left;
+ margin-left: 18px;
+ margin-bottom: 23px;
+}
+
+.cdp-header-title {
+ color: #36AAFC;
+ cursor: pointer;
+}
+
+/* 검색 */
+
+.cdp-search-area {
+ width: 100%;
+ margin-bottom: 60px;
+}
+
+.cdp-search-input-container {
+ position: relative;
+ width: 100%;
+}
+
+.cdp-search-input {
+ box-sizing: border-box;
+ width: 100%;
+ padding: 11px 10px 12px 50px;
+ font-size: 14px;
+ border: none;
+ outline: none;
+ border-radius: 7px;
+ background-color: #F7F7F7;
+}
+
+.cdp-search-icon {
+ position: absolute;
+ left: 15px;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 20px;
+ height: 20px;
+}
+
+/* 링크박스 */
+
+.cdp-linkbox-container {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 25px;
+ margin-bottom: 100px;
+}
+
+.cdp-linkbox {
+ flex: 0 1 calc((100% - 50px) / 3);
+ height: 140px;
+ background-color: #eeeeee;
+ border-radius: 8px;
+ box-sizing: border-box;
+}
+
+.cdp-no-links {
+ color: #999;
+ font-size: 14px;
+}

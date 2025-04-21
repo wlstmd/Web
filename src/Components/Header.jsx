@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <div className="header-right">
         <NavLink 
-          to="/linkSavePage" 
+          to="/CategoryPage" 
           className={({ isActive }) => `header-btn ${isActive ? 'active' : ''}`}
         >
           링크저장소

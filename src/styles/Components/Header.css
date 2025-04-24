@@ -8,7 +8,6 @@
 
 .header-left .logo {
  height: 30px;
- object-fit: contain;
 }
 
 .header-right {
@@ -23,4 +22,12 @@
  font-size: 14px;
  padding: 8px 12px;
  border-radius: 4px;
+}
+
+.header-btn.active {
+ color: #36AAFC;
+}
+
+.header.login-bg {
+ background-color: #F0F9FF;
 }

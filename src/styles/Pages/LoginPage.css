@@ -1,1 +1,93 @@
-/* LoginPage.css */
+.login-container {
+ height: 90vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #F0F9FF;
+}
+
+.login-box {
+ background-color: white;
+ padding: 50px 30px;
+ border-radius: 20px;
+ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+ width: 330px;
+}
+
+.login-form {
+ display: flex;
+ flex-direction: column;
+}
+
+.login-form label {
+ margin-bottom: 6px;
+ font-size: 11px;
+
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+ padding: 8px;
+ margin-bottom: 18px;
+ border: 1px solid #ddd;
+ border-radius: 8px;
+ font-size: 14px;
+}
+
+.login-options {
+ display: flex;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+.login-options input {
+ margin-right: 6px;
+}
+
+.login-button {
+ background-color: #199bff;
+ color: white;
+ border: none;
+ padding: 12px;
+ border-radius: 8px;
+ font-weight: bold;
+ font-size: 14px;
+ cursor: pointer;
+}
+
+.login-button:hover {
+ background-color: #0f8de0;
+}
+
+.register-link {
+ text-align: center;
+ margin-top: 16px;
+}
+
+.register-link a {
+ font-size: 12px;
+ color: #999;
+ text-decoration: none;
+}
+
+.login-logo {
+ display: flex;
+ justify-content: right;
+ margin-bottom: 10px;
+}
+
+.login-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 20px;
+}
+
+.login-title {
+ font-size: 20px;
+ margin: 0;
+}
+
+.login-logo img {
+ height: 30px;
+}

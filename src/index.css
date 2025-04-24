@@ -5,6 +5,6 @@
 @import "./styles/Pages/MainPage.css";
 @import "./styles/Pages/LoginPage.css";
 @import "./styles/Pages/SignupPage.css";
-@import "./styles/Pages/LinkSavePage.jsx";
+@import "./styles/Pages/LinkSavePage.css";
 
 @import "./styles/Components/Header.css";

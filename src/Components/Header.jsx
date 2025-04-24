@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className="header-left">
         <NavLink to="/">
-          <img src="/assets/img/Logo.png" alt="로고" className="logo" />
+          <img src="/assets/img/Logo_font_blue.png" alt="로고" className="logo"/>
         </NavLink>
       </div>
       <div className="header-right">

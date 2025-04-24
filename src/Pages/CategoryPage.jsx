@@ -1,44 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-export const categories = [
-  { id: 'all', name: '전체', count: 32 },
-  { id: 'plants', name: '식물', count: 8 },
-  { id: 'it', name: 'IT', count: 8 },
-  { id: 'cooking', name: '요리', count: 14 },
-  { id: 'music', name: '음악', count: 0 },
-];
+import { categories } from './MainPage';
 
 const CategoryPage = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredCategories = categories.filter(cat =>
+    cat.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="lsp-wrapper">
       <h1 className="lsp-header">링크저장소</h1>
 
       <div className="lsp-search-area">
         <div className="lsp-search-input-container">
-          <img 
-            src="assets/img/search.png" 
-            alt="검색 아이콘" 
+          <img
+            src="/assets/img/Search.png"
+            alt="검색 아이콘"
             className="lsp-search-icon"
           />
-          <input 
-            type="text" 
-            className="lsp-search-input" 
+          <input
+            type="text"
+            className="lsp-search-input"
             placeholder="검색어를 입력하세요."
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
           />
         </div>
       </div>
 
       <div className="lsp-category-container">
-        {categories.map((category) => (
+        {filteredCategories.map(cat => (
           <Link
-            to={`/CategoryPage/${category.id}`}
-            state={{ categoryName: category.name }}
-            key={category.id}
+            key={cat.id}
+            to={`/CategoryPage/${cat.id}`}
             className="lsp-category-box"
           >
-            <div className="lsp-category-count">{category.count}</div>
-            <div className="lsp-category-name">{category.name}</div>
+            <div className="lsp-category-count">{cat.count}</div>
+            <div className="lsp-category-name">{cat.name}</div>
           </Link>
         ))}
       </div>

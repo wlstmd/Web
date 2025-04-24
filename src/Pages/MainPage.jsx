@@ -1,9 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Main = () => {
+export const categories = [
+  { id: 'all',     name: '전체', count: 32 },
+  { id: 'plants',  name: '식물', count: 8  },
+  { id: 'it',      name: 'IT',   count: 8  },
+  { id: 'cooking', name: '요리', count: 14 },
+  { id: 'music',   name: '음악', count: 0  },
+];
+
+const MainPage = () => {
+
+  // 카테고리 상위 추출
+  const getTopCategories = (cats, zeroCountLimit = 2, nonZeroLimit = 3) => {
+    if (cats.every(({ count }) => count === 0)) {
+      return cats.slice(0, zeroCountLimit);
+    }
+
+    const allCat = cats.find(({ id }) => id === 'all');
+    const others = cats
+      .filter(({ id }) => id !== 'all')
+      .sort((a, b) => b.count - a.count)
+      .slice(0, nonZeroLimit);
+
+    return [allCat, ...others];
+  };
+
+const topCategories = getTopCategories(categories);
+
+
   return (
     <div className="mp-wrapper">
-      {/* 상단 컨테이너  */}
       <div className="mp-top-container">
         <div className="mp-top-content">
           <div className="mp-greeting-text">
@@ -15,49 +42,44 @@ const Main = () => {
           </div>
           <div className="mp-icon-container">
             <img
-              src="/assets/img/mainPage-img.png"
+              src="/assets/img/Chain-img.png"
               alt="메뉴 아이콘"
               className="mp-icon"
             />
           </div>
         </div>
         <div className="mp-input-container">
-          <input
-            type="text"
-            className="mp-link-input"
-          />
+          <input type="text" className="mp-link-input" />
           <button className="mp-save-button">저장하기</button>
         </div>
       </div>
-      {/* 링크 저장소 */}
+
       <div className="mp-link-storage-section">
         <div className="mp-section-header">
           <h2 className="mp-section-title">링크저장소</h2>
-          <span className="mp-more">더보기</span>
+          <Link className="mp-more" to="/CategoryPage">
+            더보기
+          </Link>
         </div>
         <div className="mp-link-category-container">
-          <div className="mp-link-category-box">
-              <div className="mp-link-count">18</div>
-              <div className="mp-category-name">전체</div>
-          </div>
-          <div className="mp-link-category-box">
-              <div className="mp-link-count">7</div>
-              <div className="mp-category-name">IT</div>
-          </div>
-          <div className="mp-link-category-box">
-              <div className="mp-link-count">1</div>
-              <div className="mp-category-name">음악</div>
-          </div>
-          <div className="mp-link-category-box">
-              <div className="mp-link-count">0</div>
-              <div className="mp-category-name">사회뉴스</div>
-          </div>
+          {topCategories.map(cat => (
+            <Link
+              key={cat.id}
+              to={`/CategoryPage/${cat.id}`}
+              className="mp-link-category-box"
+            >
+              <div className="mp-link-count">{cat.count}</div>
+              <div className="mp-category-name">{cat.name}</div>
+            </Link>
+          ))}
         </div>
       </div>
-      {/* 최근 열어본 링크 */}
+
       <div className="mp-recent-links-section">
         <h2 className="mp-section-title">최근 열어본 링크</h2>
         <div className="mp-recent-links-boxes">
+          {/* 최근 클릭한 링크를 db에 저장하고 불러오는 코드 추가 필요 */}
+          {/* 추가할때 로고도 나타낼 수 있는 방법이 있는지 찾을 것 */}
           <div className="mp-recent-box"></div>
           <div className="mp-recent-box"></div>
           <div className="mp-recent-box"></div>
@@ -67,4 +89,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainPage;

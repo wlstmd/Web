@@ -1,0 +1,31 @@
+.footer{
+ display: flex;
+flex-direction: column;
+ align-items: flex-start;
+ background-color: #36AAFC;
+ padding: 30px 75px;
+ gap: 20px;
+ font-size: 16px;
+ color : white;
+ width: 100%;
+}
+
+.footer-img-container{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+
+.footer-logo-font{
+ height: 30px;
+}
+
+.footer-logo-symbol{
+ width: 70px;
+}
+
+.footer-mainText {
+ display: flex;
+ align-items: center;
+ padding-top: 5px;
+}

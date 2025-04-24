@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -32,6 +31,10 @@ html, body {
   background-color: #ffffff;
   flex: 1;
   overflow-y: auto;
+}
+
+.main-content::-webkit-scrollbar {
+  display: none;
 }
 
 img {

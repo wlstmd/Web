@@ -5,13 +5,13 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-img-container">
         <img 
-          src="/assets/img/Logo_font_white.png" 
-          className="footer-logo footer-logo-font"
+          src="/assets/imgs/Font_Logo_white.png" 
+          className="footer-logo footer-font-logo"
           alt="폰트 로고"
         />
         <img 
-          src="/assets/img/Logo_white.png" 
-          className="footer-logo footer-logo-symbol" 
+          src="/assets/imgs/Symbol_Logo_white.png" 
+          className="footer-logo footer-symbol-logo" 
           alt="심볼 로고"
         />
       </div>

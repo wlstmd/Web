@@ -32,7 +32,7 @@ const CategoryDetailPage = () => {
       <div className="cdp-search-area">
         <div className="cdp-search-input-container">
           <img
-            src="/assets/img/Search.png"
+            src="/assets/imgs/Search.png"
             alt="검색 아이콘"
             className="cdp-search-icon"
           />

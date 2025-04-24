@@ -7,7 +7,7 @@ const LoginPage = () => {
     <div className="login-header">
     <h2 className="login-title">로그인</h2>
     <div className="login-logo">
-      <img src="assets\img\Logo2.png" alt="로고" />
+      <img src="assets\imgs\Symbol_Logo_blue.png" alt="로고" />
     </div>
     </div>
     <form className="login-form">

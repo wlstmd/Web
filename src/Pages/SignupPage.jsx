@@ -7,7 +7,7 @@ const SignupPage = () => {
         <div className="join-header">
           <h2 className="join-title">회원가입</h2>
           <div className="join-logo">
-            <img src="assets\img\Logo2.png" alt="로고" />
+            <img src="assets\imgs\Symbol_Logo_blue.png" alt="로고" />
           </div>
         </div>
         <form className="join-form">

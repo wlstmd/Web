@@ -9,12 +9,12 @@ const Header = () => {
     <header className={`header${isAuthPage ? ' login-bg' : ''}`}>
       <div className="header-left">
         <NavLink to="/">
-          <img src="/assets/img/Logo.png" alt="로고" className="logo" />
+          <img src="/assets/imgs/Font_Logo_blue.png" alt="로고" className="logo" />
         </NavLink>
       </div>
       <div className="header-right">
         <NavLink 
-          to="/linkSavePage" 
+          to="/CategoryPage" 
           className={({ isActive }) => `header-btn ${isActive ? 'active' : ''}`}
         >
           링크저장소

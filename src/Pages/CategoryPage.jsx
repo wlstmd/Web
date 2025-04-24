@@ -16,7 +16,7 @@ const CategoryPage = () => {
       <div className="lsp-search-area">
         <div className="lsp-search-input-container">
           <img
-            src="/assets/img/Search.png"
+            src="/assets/imgs/Search.png"
             alt="검색 아이콘"
             className="lsp-search-icon"
           />

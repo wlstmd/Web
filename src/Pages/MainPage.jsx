@@ -11,7 +11,7 @@ export const categories = [
 
 const MainPage = () => {
 
-  // 카테고리 상위 추출
+  // 링크저장수가 많은 순서로 배열하여 상위 4가지 카테고리 출력
   const getTopCategories = (cats, zeroCountLimit = 2, nonZeroLimit = 3) => {
     if (cats.every(({ count }) => count === 0)) {
       return cats.slice(0, zeroCountLimit);
@@ -42,7 +42,7 @@ const topCategories = getTopCategories(categories);
           </div>
           <div className="mp-icon-container">
             <img
-              src="/assets/img/Chain-img.png"
+              src="/assets/imgs/Chain-img.png"
               alt="메뉴 아이콘"
               className="mp-icon"
             />

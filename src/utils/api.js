@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://54.178.94.175",
+  baseURL: "https://d12snnlkka37nd.cloudfront.net",
   withCredentials: true,
 });
 

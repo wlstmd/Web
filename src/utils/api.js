@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://d12snnlkka37nd.cloudfront.net",
+  baseURL: "https://d2f9hlx14ar5jj.cloudfront.net",
   withCredentials: true,
 });
 
 const refreshApi = axios.create({
-  baseURL: 'https://d12snnlkka37nd.cloudfront.net',
+  baseURL: 'https://d2f9hlx14ar5jj.cloudfront.net',
   withCredentials: true,
 });
 

@@ -16,7 +16,6 @@ const Footer = () => {
         />
       </div>
       <div className="footer-Text">
-        <div>Team ILoveYu | 권가령 | 유진승 | 박성민 | 김근모</div>
         <div>Copyrightⓒ 2025 Linky . All rights reserved</div>
       </div>
     </div>

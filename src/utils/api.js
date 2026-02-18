@@ -1,12 +1,12 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://d2f9hlx14ar5jj.cloudfront.net",
+  baseURL: "https://project-jinseung-alb-673224751.ap-northeast-2.elb.amazonaws.com",
   withCredentials: true,
 });
 
 const refreshApi = axios.create({
-  baseURL: 'https://d2f9hlx14ar5jj.cloudfront.net',
+  baseURL: 'https://project-jinseung-alb-673224751.ap-northeast-2.elb.amazonaws.com',
   withCredentials: true,
 });
 
